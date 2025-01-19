@@ -23,22 +23,28 @@ Prerequisites
 - Git
 
 # 1. Clone the Repository
-
-'''
-  git clone https://github.com/mel-1989/Stock-Oracle.git
-  pip install -r requirements.txt
-'''
+  
+```
+git clone https://github.com/mel-1989/Stock-Oracle.git
+pip install -r requirements.txt
+```
 
 # 2. Train the Models
   Edit Auto.py to train models for the stocks you want to predict. To do this, just find the "stock_pairs"       dictionary in the file, edit the elements to include the stock or stock pairs you want to focus on. 
+  
 
   Once the stocks are specified, use the following command:
-      python auto.py
+  
+```
+ python auto.py
+```
+ 
   This will:
   - Download historical data for the specified symbols
   - Process data automatically and begin the to train the ensemble of ML models
   - optimize the model structure iteratively
   - Save the trained models
+    
 
 The training process typically takes 15-30 minutes per symbol on a modern CPU. GPU acceleration is supported and will significantly reduce training time.
 
@@ -46,15 +52,17 @@ The training process typically takes 15-30 minutes per symbol on a modern CPU. G
 Start the web interface to explore predictions and model insights:
 
 launch the backend first:
-  '''
-  python api.py
-  '''
 
-Then in a different window activate the react frontend:
-'''
+```
+ python api.py
+```
+
+Then in a different terminal activate the react frontend:
+
+```
   npm install #on first install
   npm start
-'''
+```
   
 Navigate to http://localhost:3000 to access the dashboard. You'll see real-time predictions, model performance metrics, and interactive visualizations of market trends.
 That's it! 
