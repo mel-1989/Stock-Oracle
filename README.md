@@ -1,5 +1,14 @@
 # Stock-Oracle:
-A machine learning framework for predicting stock market movements using historical price data. Future plans to leverage technical indicators and sentiment analysis from financial news.
+A machine learning framework for predicting stock market movements using historical price data. Future plans to leverage technical indicators and sentiment analysis from financial news. Disclaimer: I've made this project with the goal of getting my feet wet with ML modelling in a somewhat practical space. This is by no means a fully developed project or anything meant to be deployed or used in any real world context. Hopefully, this first test will lead to greater project in the future, but for now this is only a educational endeavor. 
+
+My conclusion: the methods used here alone are unsatisfactory for price prediction, even putting aside wildly inaccurate estimates (some tickers resulted in consistently poor outputs, likely a result of historical events distorting the data's continuity in atypical ways, such as stock splits), historical data alone is certainly not enough to attempt medium term valuation (daily and weekly shifts). I have not tried with shorter time scales due to computational limitations.
+
+Experiments for future projects:
+- greater selection of data types (fundamentals, multiples, technical indicators, macro, sentiment(?))
+- greater specificity in prediction (industrial groupings, boutique data selection for a single stock, etc)
+- Different time scales (long term (present value) estimates, ultra short term HFT)
+- Different output methodology (buy/sell signal instead of price estimate, more general rating system)
+- Develop a more solid model architecture design (bounced back and forth with a few different models, need some thorough research on design)
 
 # Overview:
 Stock Oracle combines multiple ML models including LSTM networks and gradient boosting to forecast stock prices across different time horizons. The system processes real-time market data to generate trading signals and price predictions.
