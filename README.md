@@ -2,7 +2,7 @@
 A machine learning framework for predicting stock market movements using historical price data. Future plans to leverage technical indicators and sentiment analysis from financial news.
 
 # Overview:
-StockSage combines multiple ML models including LSTM networks and gradient boosting to forecast stock prices across different time horizons. The system processes real-time market data to generate trading signals and price predictions.
+Stock Oracle combines multiple ML models including LSTM networks and gradient boosting to forecast stock prices across different time horizons. The system processes real-time market data to generate trading signals and price predictions.
 #Key Features:
 - Multi-model ensemble approach combining deep learning and traditional ML algorithms
 - Real-time processing of market data and technical indicators
